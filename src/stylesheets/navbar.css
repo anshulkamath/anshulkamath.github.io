@@ -1,0 +1,82 @@
+.custom-navbar {
+    position: sticky;
+    top: 0vh;
+    height: 5vw;
+    width: 100vw;
+    display: block;
+    padding: 1.1vw;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 20pt;
+    border-bottom-right-radius: 20pt;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-menu {
+    list-style-type: none;
+    background-color: inherit;
+}
+
+.inline {
+    display: inline;
+}
+
+.menu-item {
+    margin: 4vh;
+    height: 2.5vw;
+    font-size: 1vw;
+    background-color: inherit;
+}
+
+.menu-item-big {
+    margin: 1vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    background-color: inherit;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clicked-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    margin-left: -4vh;
+    padding: 0vw;
+    background-color: inherit;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+.mono-heavy {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+}
+
+.pair-left {
+    list-style-position: inside;
+    border: 2pt solid black;
+    border-right-width: 0px;
+    border-radius: 1vw;
+    border-top-right-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    padding: 1vh;
+    padding-right: 0vw;
+    background-color: inherit;
+}
+
+.pair-right {
+    list-style-position: inside;
+    border: 2pt solid black;
+    border-left-width: 0px;
+    border-radius: 1vw;
+    border-top-left-radius: 0vw;
+    border-bottom-left-radius: 0vw;
+    padding: 1vh;
+    padding-left: 0vw;
+}
