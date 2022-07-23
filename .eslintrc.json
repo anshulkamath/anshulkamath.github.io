@@ -1,0 +1,56 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "react/function-component-definition": "off",
+        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx", ".js", ".ts"] }],
+        "import/extensions": "off",
+        "quotes": ["error", "single", "avoid-escape"],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "import/order": ["error", {
+            "alphabetize": {
+                "order": "asc"
+            },
+            "pathGroups": [
+              {
+                "pattern": "react*",
+                "group": "external"
+              }
+            ],
+            "groups": ["external", "internal", "parent", ["sibling", "index"]],
+            "newlines-between": "always"
+        }]
+    }
+}
