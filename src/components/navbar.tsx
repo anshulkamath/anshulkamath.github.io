@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 
-import { navbarPageRouter, GITHUB, LINKEDIN, BADGE, CONTACT_ME } from 'constants/navbar.constants'
+import { navbarPageRouter, GITHUB, LINKEDIN, BADGE, CONTACT_ME } from 'constants/navbar'
 
 import 'stylesheets/navbar.css'
 

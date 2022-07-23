@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from 'react'
 
 import NavBar from 'components/navbar'
-import { HOME, PROJECTS, RESUME } from 'constants/navbar.constants'
+import { HOME, PROJECTS, RESUME } from 'constants/navbar'
 
-import HomePage from './home.pages'
-import MiscPage from './misc.pages'
-import ProjectsPage from './projects.pages'
-import ResumePage from './resume.pages'
+import HomePage from './home'
+import MiscPage from './misc'
+import ProjectsPage from './projects'
+import ResumePage from './resume'
 
 import 'stylesheets/rootPage.css'
 
