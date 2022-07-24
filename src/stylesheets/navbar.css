@@ -53,6 +53,7 @@
     color: var(--bs-light)
 }
 
+/* Styling to create badge in top left */
 .pair-left {
     list-style-position: inside;
     border: 2pt solid var(--bs-primary);
@@ -77,25 +78,22 @@
     background-color: var(--bs-primary);
 }
 
-.link-break {
-    margin-left: 5vh;
-}
-
-.github, .github:link {
+/* external link styling */
+.github, .github:link, .github:active, .github:visited {
     background-color: var(--bs-dark);
     color: white;
     border-radius: 10px;
     text-decoration: none;
 }
 
-.linked-in, .linked-in:link {
+.linked-in, .linked-in:link, .linked-in:active, .linked-in:visited {
     background-color: var(--bs-primary);
     color: white;
     border-radius: 10px;
     text-decoration: none;
 }
 
-.contact-me, .contact-me:link {
+.contact-me, .contact-me:link, .contact-me:active, .contact-me:visited {
     background-color: var(--bs-secondary);
     color: white;
     border-radius: 10px;
