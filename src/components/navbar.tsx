@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button'
 
 import { navbarPageRouter, GITHUB, LINKEDIN, BADGE, CONTACT_ME } from 'constants/navbar'
 
@@ -53,23 +52,33 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
   return (
     <div className='custom-navbar'>
       <ul className='navbar-menu'>
-        <li id={BADGE.id} key={BADGE.id} className='menu-item inline mono-heavy pair-left'>
+        <li id={BADGE.id} key={BADGE.id} className='menu-item inline badge-font pair-left'>
           {`${BADGE.title} / `}
         </li>
         {currentPage}
         {navItems}
-        <li id={GITHUB.id} key={GITHUB.id} className='menu-item-big inline mono'>
-          <Button variant='dark' href='https://www.github.com/anshulkamath' target='blank'>
+        <li id={GITHUB.id} key={GITHUB.id} className='inline'>
+          <a
+            href='https://www.github.com/anshulkamath'
+            target='blank'
+            className='menu-item-big github mono'
+          >
             {GITHUB.title}
-          </Button>
+          </a>
         </li>
-        <li id={LINKEDIN.id} key={LINKEDIN.id} className='menu-item-big inline mono'>
-          <Button variant='primary' href='https://www.linkedin.com/in/anshulkam' target='blank'>
+        <li id={LINKEDIN.id} key={LINKEDIN.id} className='inline'>
+          <a
+            href='https://www.linkedin.com/in/anshulkam'
+            target='blank'
+            className='menu-item-big linked-in mono'
+          >
             {LINKEDIN.title}
-          </Button>
+          </a>
         </li>
-        <li id={CONTACT_ME.id} key={CONTACT_ME.id} className='menu-item-big inline mono'>
-          <Button variant='secondary'>{CONTACT_ME.title}</Button>
+        <li id={CONTACT_ME.id} key={CONTACT_ME.id} className='inline'>
+          <a href='/#' className='menu-item-big contact-me mono'>
+            {CONTACT_ME.title}
+          </a>
         </li>
       </ul>
     </div>

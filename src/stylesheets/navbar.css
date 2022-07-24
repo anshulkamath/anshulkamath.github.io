@@ -15,21 +15,19 @@
 
 .navbar-menu {
     list-style-type: none;
-    background-color: inherit;
 }
 
 .menu-item {
     margin: 4vh;
     height: 2.5vw;
     font-size: 1vw;
-    background-color: inherit;
 }
 
 .menu-item-big {
     margin: 1vw;
     height: 2.5vw;
     font-size: 1vw;
-    background-color: inherit;
+    padding: 1vh;
 }
 
 .clickable {
@@ -41,7 +39,7 @@
     font-weight: 800;
     margin-left: -4vh;
     padding: 0vw;
-    background-color: inherit;
+    color: var(--bs-light);
 }
 
 .mono {
@@ -49,30 +47,57 @@
     font-weight: 400;
 }
 
-.mono-heavy {
+.badge-font {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
+    color: var(--bs-light)
 }
 
 .pair-left {
     list-style-position: inside;
-    border: 2pt solid black;
+    border: 2pt solid var(--bs-primary);
     border-right-width: 0px;
     border-radius: 1vw;
     border-top-right-radius: 0vw;
     border-bottom-right-radius: 0vw;
     padding: 1vh;
     padding-right: 0vw;
-    background-color: inherit;
+    background-color: var(--bs-primary);
 }
 
 .pair-right {
     list-style-position: inside;
-    border: 2pt solid black;
+    border: 2pt solid var(--bs-primary);
     border-left-width: 0px;
     border-radius: 1vw;
     border-top-left-radius: 0vw;
     border-bottom-left-radius: 0vw;
     padding: 1vh;
     padding-left: 0vw;
+    background-color: var(--bs-primary);
+}
+
+.link-break {
+    margin-left: 5vh;
+}
+
+.github, .github:link {
+    background-color: var(--bs-dark);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.linked-in, .linked-in:link {
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-me, .contact-me:link {
+    background-color: var(--bs-secondary);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
 }

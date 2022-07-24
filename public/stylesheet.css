@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  background-color: #e4e4e4;
+  background-color: inherit;
 }
 
 body {
   width: 100%;
+  min-height: 100vh;;
 }
 
 div {
@@ -14,10 +15,6 @@ div {
 
 li {
   text-align: match-parent;
-}
-
-b {
-  background-color: inherit;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -33,4 +30,8 @@ button, input[type="submit"], input[type="reset"] {
 
 .inline {
   display: inline;
+}
+
+.nunito {
+  font-family: Nunito;
 }
