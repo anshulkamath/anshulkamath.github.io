@@ -1,0 +1,38 @@
+.projects-container {
+  position: relative;
+  padding: 1vw;
+  margin: 1vw;
+  overflow: hidden;
+  perspective: 1000px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.toggle-row {
+  width: 50vw;
+  display: inherit;
+  align-items: justify;
+  justify-content: center;
+}
+
+.toggle-buttons {
+  text-align: justify;
+}
+
+div.project-toggle-on {
+  background-color: var(--bs-primary);
+  padding: 1.5vw;
+  border-radius: 20px;
+}
+
+button.project-toggle-on, h2.project-toggle-on {
+  color: white;
+}

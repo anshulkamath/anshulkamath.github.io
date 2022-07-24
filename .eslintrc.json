@@ -37,6 +37,7 @@
         "import/extensions": "off",
         "quotes": ["error", "single", "avoid-escape"],
         "no-unused-vars": "off",
+        "no-shadow": "off",
         "@typescript-eslint/no-unused-vars": ["warn"],
         "jsx-a11y/no-noninteractive-element-interactions": "off",
         "import/order": ["error", {
