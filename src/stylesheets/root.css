@@ -1,0 +1,14 @@
+.root-container {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+.rest {
+  top: 5vw;
+  width: 100vw;
+  height: auto;
+}
