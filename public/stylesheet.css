@@ -9,10 +9,6 @@ body {
   min-height: 100vh;;
 }
 
-div {
-  display: block;
-}
-
 li {
   text-align: match-parent;
 }
@@ -35,3 +31,9 @@ button, input[type="submit"], input[type="reset"] {
 .nunito {
   font-family: Nunito;
 }
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+

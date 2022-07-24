@@ -5,6 +5,7 @@
 interface NavItem {
   id: string
   title: string
+  style?: string
 }
 
 // navbar links
@@ -15,8 +16,9 @@ export const RESUME = { id: '#resume', title: 'resume' }
 export const MISC = { id: '#misc', title: 'misc' }
 
 // external links
-export const GITHUB = { id: '#github', title: 'github' }
-export const LINKEDIN = { id: '#linkedin', title: 'linkedin' }
-export const CONTACT_ME = { id: '#contact-me', title: 'contact me!' }
+export const GITHUB = { id: '#github', title: 'github', style: 'github' }
+export const LINKEDIN = { id: '#linkedin', title: 'linkedin', style: 'linked-in' }
+export const CONTACT_ME = { id: '#contact-me', title: 'contact me!', style: 'contact-me' }
 
 export const navbarPageRouter: NavItem[] = [HOME, PROJECTS, RESUME, MISC]
+export const navbarExternalLinks: NavItem[] = [GITHUB, LINKEDIN, CONTACT_ME]
