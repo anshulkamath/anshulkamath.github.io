@@ -1,5 +1,12 @@
 import React from 'react'
 
-const ResumePage: React.FunctionComponent = () => <div>This is the resume page</div>
+import kamathResume from 'resources/kamathResume.png'
+import 'stylesheets/resume.css'
+
+const ResumePage: React.FunctionComponent = () => (
+  <div className='resume-page'>
+    <img src={kamathResume} alt='kamathResume' width='60%' />
+  </div>
+)
 
 export default ResumePage
