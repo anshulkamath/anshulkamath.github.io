@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { navbarPageRouter, GITHUB, LINKEDIN, BADGE, CONTACT_ME } from 'constants/navbar'
+import { navbarPageRouter, navbarExternalLinks, BADGE } from 'constants/navbar'
 
 import 'stylesheets/navbar.css'
 
@@ -17,70 +17,67 @@ interface NavBarProps {
  * @returns A React Component
  */
 const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
-  const clickedFormat = (title: string) => <b>{title}</b>
-
-  // map the nav items to the list
-  const navItemsMap = navbarPageRouter.map(({ id, title }) => {
+  // map over all nav pages and create the respective element (taking into account
+  // style of current page)
+  const navPagesMap = navbarPageRouter.map(({ id, title }) => {
     const isSelected = page === id
 
     return {
-      li: (
-        <li
+      elem: isSelected ? (
+        <div id={id} key={id} className='badge-item inline badge-font'>
+          {title}
+        </div>
+      ) : (
+        <button
           id={id}
           key={id}
-          className={`menu-item inline ${
-            isSelected ? 'pair-right clicked-item' : 'mono clickable'
-          }`}
+          type='submit'
+          onClick={() => onClick('#project')}
+          className='menu-item mono clickable'
         >
-          {isSelected ? (
-            clickedFormat(title)
-          ) : (
-            <button type='submit' onClick={() => onClick(id)}>
-              {title}
-            </button>
-          )}
-        </li>
+          {title}
+        </button>
       ),
       value: +isSelected,
     }
   })
 
-  const [currentPage, ...navItems] = navItemsMap
+  const [currentPage, ...navPages] = navPagesMap
     .sort((a, b) => b.value - a.value)
-    .map(({ li }) => li)
+    .map(({ elem }) => elem)
 
-  return (
-    <div className='custom-navbar'>
-      <ul className='navbar-menu'>
-        <li id={BADGE.id} key={BADGE.id} className='menu-item inline badge-font pair-left'>
-          {`${BADGE.title} / `}
-        </li>
-        {currentPage}
-        {navItems}
-        <li id={GITHUB.id} key={GITHUB.id} className='inline'>
+  // create the badge
+  const badge = (
+    <div className='navbar-badge'>
+      <div id={BADGE.id} key={BADGE.id} className='badge-item inline badge-font'>
+        {`${BADGE.title}\u00A0/\u00A0`}
+      </div>
+      {currentPage}
+    </div>
+  )
+
+  // map the external links buttons
+  const externalLinkButtons = (
+    <div className='external-links'>
+      {navbarExternalLinks.map(({ id, title, style }) => (
+        <div id={id} key={id}>
           <a
             href='https://www.github.com/anshulkamath'
             target='blank'
-            className='menu-item-big github mono'
+            className={`menu-item-big mono ${style || ''}`}
           >
-            {GITHUB.title}
+            {title}
           </a>
-        </li>
-        <li id={LINKEDIN.id} key={LINKEDIN.id} className='inline'>
-          <a
-            href='https://www.linkedin.com/in/anshulkam'
-            target='blank'
-            className='menu-item-big linked-in mono'
-          >
-            {LINKEDIN.title}
-          </a>
-        </li>
-        <li id={CONTACT_ME.id} key={CONTACT_ME.id} className='inline'>
-          <a href='/#' className='menu-item-big contact-me mono'>
-            {CONTACT_ME.title}
-          </a>
-        </li>
-      </ul>
+        </div>
+      ))}
+    </div>
+  )
+
+  return (
+    <div className='custom-navbar'>
+      {badge}
+      {navPages}
+      {externalLinkButtons}
     </div>
   )
 }
