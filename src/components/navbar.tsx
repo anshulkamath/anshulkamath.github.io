@@ -24,7 +24,7 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
 
     return {
       elem: isSelected ? (
-        <div id={id} key={id} className='badge-item inline badge-font'>
+        <div id={id} key={id} className='badge-item badge-font'>
           {title}
         </div>
       ) : (
@@ -32,7 +32,7 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
           id={id}
           key={id}
           type='submit'
-          onClick={() => onClick('#project')}
+          onClick={() => onClick(id)}
           className='menu-item mono clickable'
         >
           {title}
@@ -49,7 +49,7 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
   // create the badge
   const badge = (
     <div className='navbar-badge'>
-      <div id={BADGE.id} key={BADGE.id} className='badge-item inline badge-font'>
+      <div id={BADGE.id} key={BADGE.id} className='badge-item badge-font'>
         {`${BADGE.title}\u00A0/\u00A0`}
       </div>
       {currentPage}
