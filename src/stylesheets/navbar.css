@@ -1,0 +1,101 @@
+.custom-navbar {
+    position: sticky;
+    top: 0vh;
+    height: 5vw;
+    width: 100vw;
+    display: block;
+    padding: 1.1vw;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 20pt;
+    border-bottom-right-radius: 20pt;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-menu {
+    list-style-type: none;
+}
+
+.menu-item {
+    margin: 4vh;
+    height: 2.5vw;
+    font-size: 1vw;
+}
+
+.menu-item-big {
+    margin: 1vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    padding: 1vh;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clicked-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    margin-left: -4vh;
+    padding: 0vw;
+    color: var(--bs-light);
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+.badge-font {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    color: var(--bs-light)
+}
+
+/* Styling to create badge in top left */
+.pair-left {
+    list-style-position: inside;
+    border: 2pt solid var(--bs-primary);
+    border-right-width: 0px;
+    border-radius: 1vw;
+    border-top-right-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    padding: 1vh;
+    padding-right: 0vw;
+    background-color: var(--bs-primary);
+}
+
+.pair-right {
+    list-style-position: inside;
+    border: 2pt solid var(--bs-primary);
+    border-left-width: 0px;
+    border-radius: 1vw;
+    border-top-left-radius: 0vw;
+    border-bottom-left-radius: 0vw;
+    padding: 1vh;
+    padding-left: 0vw;
+    background-color: var(--bs-primary);
+}
+
+/* external link styling */
+.github, .github:link, .github:active, .github:visited {
+    background-color: var(--bs-dark);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.linked-in, .linked-in:link, .linked-in:active, .linked-in:visited {
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-me, .contact-me:link, .contact-me:active, .contact-me:visited {
+    background-color: var(--bs-secondary);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
