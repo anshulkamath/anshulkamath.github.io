@@ -1,0 +1,128 @@
+/* Card container */
+.card-scene {
+  background-color: transparent;
+  width: 60vw;
+  align-items: center;
+}
+
+/* Normal properties */
+.card-container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2vh;
+}
+
+/* Flippable card properties */
+.flip-card-container {
+  position: relative;
+  height: 40vh;
+  background-color: transparent;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-container.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-item-front, .card-item-front-mirrored, .card-item-back {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+  margin: 1vh;
+  display: inherit;
+}
+
+.card-item-front-mirrored {
+  flex-direction: row-reverse;
+}
+
+.card-item-back {
+  transform: rotateY(180deg);
+}
+
+/* For 'raising card' effect */
+.card-shadow-animation {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
+}
+
+.card-shadow-animation:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  cursor: pointer;
+}
+
+div.card-div-front {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+}
+
+div.card-div-back {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2vh;
+}
+
+div.card-div-blurb {
+  margin: 10px;
+}
+
+img.card-div-front {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-right: 2px solid black;
+}
+
+img.card-div-front-mirrored {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-left: 2px solid black;
+}
+
+
+div.card-footer {
+  padding: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a.card-link {
+  text-decoration: none;
+}
+
+.card-shadow {
+  filter: drop-shadow(-6px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 20px 0 rgba(0, 0, 0, 0.19));
+}
