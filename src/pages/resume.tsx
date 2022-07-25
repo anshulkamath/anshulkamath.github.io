@@ -1,6 +1,6 @@
 import React from 'react'
 
-import kamathResume from 'resources/kamathResume.png'
+import kamathResume from 'resources/media/kamathResume.png'
 import 'stylesheets/resume.css'
 
 const ResumePage: React.FunctionComponent = () => (

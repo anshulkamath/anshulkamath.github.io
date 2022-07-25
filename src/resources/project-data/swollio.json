@@ -1,0 +1,21 @@
+{
+  "title": "Swollio",
+  "skills": ["Typescript", "PostgreSQL", "React Native", "Google Cloud Platform"],
+  "repos": [
+    {
+      "link": "https://github.com/swollio/swollio-frontend",
+      "title": "Frontend Source Code"
+    },
+    {
+      "link": "https://github.com/swollio/swollio-backend",
+      "title": "Backend Source Code"
+    }
+  ],
+  "mediaAlt": "swollio",
+  "shortDescription":
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "projectDescription":
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "thingsLearned":
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}
