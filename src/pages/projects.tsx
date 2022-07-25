@@ -2,7 +2,8 @@ import React, { useCallback, useState } from 'react'
 
 import ProjectCard from 'components/projectCard'
 import ToggleButton from 'components/toggleButton'
-import { ProjectType, projectLists, ProjectData } from 'constants/projects'
+import { projectLists, ProjectData } from 'constants/projects'
+import ProjectType from 'models/ProjectType'
 
 import 'stylesheets/projects.css'
 import 'stylesheets/card.css'

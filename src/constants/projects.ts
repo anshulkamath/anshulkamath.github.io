@@ -1,11 +1,14 @@
 import React from 'react'
 
+import ProjectType from 'models/ProjectType'
+import Repository from 'models/Respository'
+
 import amazonPNG from 'resources/media/amazon.png'
 import amistadPNG from 'resources/media/amistad.png'
 import cTestingPNG from 'resources/media/cTesting.png'
 import ellipticCurvePNG from 'resources/media/ellipticCurve.png'
-import lightsGIF from 'resources/media/lights.gif'
-import manimGIF from 'resources/media/manim.gif'
+import lightsMP4 from 'resources/media/lights.mp4'
+import manimMP4 from 'resources/media/manim.mp4'
 import prosperlyPNG from 'resources/media/prosperly.png'
 import swollioPNG from 'resources/media/swollio.png'
 
@@ -21,21 +24,11 @@ import shellProjectJSON from 'resources/project-data/shell.json'
 import swollioProjectJSON from 'resources/project-data/swollio.json'
 import websiteProjectJSON from 'resources/project-data/website.json'
 
-export enum ProjectType {
-  PERSONAL = 'personal',
-  WORK = 'work',
-}
-
-export interface Repo {
-  link: string
-  title: string
-}
-
 export interface ProjectData {
   title: string // the title of the project
   skills: string[] // a list of all the skills used
   time?: string // a string denoting when the project was undertaken
-  repos?: Repo[] // a link to the github repo
+  repos?: Repository[] // a link to the github repo
   media?: string // the path to the media to display
   mediaAlt?: string // the alt for the given media
   shortDescription: string // a short description of the project
@@ -72,7 +65,7 @@ export const ecdsaProject: ProjectData = {
 
 export const ledLightsProject: ProjectData = {
   ...ledLightsProjectJSON,
-  media: lightsGIF,
+  media: lightsMP4,
   imgStyling: { objectPosition: '-80px' },
   projectType: ProjectType.PERSONAL,
 }
@@ -84,7 +77,7 @@ export const luluProject: ProjectData = {
 
 export const manimProject: ProjectData = {
   ...manimProjectJSON,
-  media: manimGIF,
+  media: manimMP4,
   projectType: ProjectType.PERSONAL,
 }
 
