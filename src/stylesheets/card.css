@@ -1,8 +1,9 @@
 /* Card container */
 .card-scene {
   background-color: transparent;
-  width: 60vw;
+  width: 75vw;
   align-items: center;
+  perspective: 1000px;
 }
 
 /* Normal properties */
@@ -23,11 +24,17 @@
   height: 40vh;
   background-color: transparent;
   transition: transform 1s;
+  transform-origin: center;
+  transition-property: all;
   transform-style: preserve-3d;
 }
 
 .flip-card-container.is-flipped {
   transform: rotateY(180deg);
+}
+
+.flip-card-container.is-flipped.is-mirrored {
+  transform: rotateY(-180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -92,21 +99,26 @@ div.card-div-blurb {
   margin: 10px;
 }
 
+img.card-div-front, img.card-div-front-mirrored {
+  height: 100%;
+  width: auto;
+  max-width: 40%;
+  object-fit: cover;
+}
+
+img.object-contain {
+  object-fit: contain;
+}
+
 img.card-div-front {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  height: 100%;
-  width: auto;
-  object-fit: cover;
   border-right: 2px solid black;
 }
 
 img.card-div-front-mirrored {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 100%;
-  width: auto;
-  object-fit: cover;
   border-left: 2px solid black;
 }
 
@@ -125,4 +137,12 @@ a.card-link {
 
 .card-shadow {
   filter: drop-shadow(-6px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 20px 0 rgba(0, 0, 0, 0.19));
+}
+
+div.card-link {
+  margin: 1vh
+}
+
+a.card-link {
+  color: var(--bs-primary);
 }

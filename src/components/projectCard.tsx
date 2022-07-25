@@ -32,24 +32,38 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
         } card-shadow card-shadow-animation`}
         onClick={() => onClick()}
       >
-        <img
-          className={`card-div-front${mirrored ? '-mirrored' : ''}`}
-          src={projectData.media}
-          alt={projectData.mediaAlt}
-        />
+        {projectData.media && (
+          <img
+            src={projectData.media}
+            alt={projectData.mediaAlt}
+            className={`card-div-front${mirrored ? '-mirrored' : ''}`}
+            style={projectData.imgStyling || {}}
+          />
+        )}
         <div className='card-div-front'>
           <div className='card-div-blurb'>
-            <h3 className='nunito'>Hello world!</h3>
+            <h3 className='nunito'>{projectData.title}</h3>
             <p className='card-div'>{projectData.shortDescription}</p>
           </div>
+          {projectData.time && (
+            <div className='card-div-blurb'>
+              <h5 className='nunito'>{projectData.time}</h5>
+            </div>
+          )}
           <div className='card-div-blurb'>
-            <h5 className='nunito'>Uses: C</h5>
+            <h5 className='nunito'>
+              <b>Skills:</b> {projectData.skills.join(', ')}
+            </h5>
           </div>
-          <div className='card-link'>
-            <a className='nunito card-link' href={projectData.repo}>
-              <h5>Github Link</h5>
-            </a>
-          </div>
+          {projectData.repos && (
+            <div className='card-link'>
+              {projectData.repos.map(({ link, title }) => (
+                <a className='nunito card-link' href={link}>
+                  <h5>{title}</h5>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </button>
       <button
@@ -72,9 +86,15 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
           </div>
           <div className='card-footer'>
             <h5 className='nunito'>Skills/Tools: {projectData.skills.join(', ')}</h5>
-            <a className='nunito card-link' href={projectData.repo}>
-              <h5>Github Link</h5>
-            </a>
+            {projectData.repos && (
+              <div className='card-link'>
+                {projectData.repos.map(({ link, title }) => (
+                  <a className='nunito card-link' href={link}>
+                    <h5>{title}</h5>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </button>
