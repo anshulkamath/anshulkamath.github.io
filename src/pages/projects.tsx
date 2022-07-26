@@ -14,7 +14,7 @@ const ProjectsPage: React.FunctionComponent = () => {
 
   const projectsList = personalProjects.concat(workProjects)
 
-  const [projectsToggled, setProjectsToggled] = useState(false)
+  const [projectsToggled, setProjectsToggled] = useState(true)
   const [experienceToggled, setExperienceToggled] = useState(false)
   const [cardsFlipped, setCardsFlipped] = useState(Array(projectsList.length).fill(false))
 
