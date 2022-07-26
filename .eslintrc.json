@@ -31,15 +31,19 @@
         }
     },
     "rules": {
-        "prettier/prettier": "error",
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/no-empty-function": "off",
         "react/function-component-definition": "off",
         "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx", ".js", ".ts"] }],
+        "react/jsx-no-useless-fragment": "off",
         "import/extensions": "off",
-        "quotes": ["error", "single", "avoid-escape"],
         "no-unused-vars": "off",
         "no-shadow": "off",
-        "@typescript-eslint/no-unused-vars": ["warn"],
+        "prettier/prettier": "error",
+        "quotes": ["error", "single", "avoid-escape"],
+        "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
         "import/order": ["error", {
             "alphabetize": {
                 "order": "asc"

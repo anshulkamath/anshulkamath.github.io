@@ -3,9 +3,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "start:prod": "source .env && react-scripts start",
-    "build": "tsc --build",
+    "start": "source .env && react-scripts start",
+    "start:prod": "react-scripts start",
+    "build": "react-scripts build",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{tsx,ts}\""
   },
