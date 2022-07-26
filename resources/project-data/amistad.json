@@ -1,0 +1,13 @@
+{
+    "title": "AMISTAD Lab",
+    "skills": ["Matplotlib, Numpy, Pandas, SQL"],
+    "time": "May 2021 - Present",
+    "repos": [{
+            "link": "https://github.com/AMISTAD-lab/gopher-grounds-source",
+            "title": "Gopher Grounds Source Code"
+        }],
+    "mediaAlt": "amistad lab",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "thingsLearned": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}
