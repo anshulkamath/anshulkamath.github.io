@@ -58,7 +58,12 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
           {projectData.repos && (
             <div className='card-link'>
               {projectData.repos.map(({ link, title }) => (
-                <a className='nunito card-link' href={link} target='blank'>
+                <a
+                  className='nunito card-link'
+                  href={link}
+                  target='blank'
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <h5>{title}</h5>
                 </a>
               ))}
