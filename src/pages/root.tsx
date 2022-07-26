@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react'
 
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'components/modal'
 import NavBar from 'components/navbar'
+import devAlertModal from 'constants/devAlertModal'
 import { HOME, PROJECTS, RESUME } from 'constants/navbar'
 
 import HomePage from './home'
@@ -12,10 +14,14 @@ import 'stylesheets/root.css'
 
 const RootPage = () => {
   const [pageId, setPageId] = useState(HOME.id)
+  const [showDevelopmentAlert, setShowDevelopmentAlert] = useState(
+    !Number.parseInt(process.env.REACT_APP_NO_SHOW_MODAL || '0', 10),
+  )
   const onChangePage = useCallback((newPage: string) => setPageId(newPage), [])
+  const onHideModal = useCallback(() => setShowDevelopmentAlert(false), [])
 
   useEffect(() => {
-    if (!process.env.REACT_APP_PROD) {
+    if (process.env.REACT_APP_DEBUG) {
       setPageId(PROJECTS.id)
     }
   }, [])
@@ -32,12 +38,19 @@ const RootPage = () => {
   }
 
   return (
-    <div className='root-container'>
-      <NavBar page={pageId} onClick={onChangePage} />
-      <div className='rest'>
-        <CurrentPage />
+    <>
+      <div className='root-container'>
+        <NavBar page={pageId} onClick={onChangePage} />
+        <div className='rest'>
+          <CurrentPage />
+        </div>
       </div>
-    </div>
+      <Modal open={showDevelopmentAlert} onClose={onHideModal}>
+        <ModalHeader title={devAlertModal.title} />
+        <ModalBody body={devAlertModal.message} />
+        <ModalFooter closeTitle={devAlertModal.closeButton} onClose={onHideModal} />
+      </Modal>
+    </>
   )
 }
 

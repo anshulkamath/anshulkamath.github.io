@@ -36,6 +36,7 @@ const ProjectsPage: React.FunctionComponent = () => {
       ((projectsToggled && projectData.projectType === ProjectType.PERSONAL) ||
         (experienceToggled && projectData.projectType === ProjectType.WORK)) && (
         <ProjectCard
+          key={projectData.title}
           cardFlipped={cardsFlipped[i]}
           onClick={() => onCardPressedCallback(i)}
           projectData={projectData}
