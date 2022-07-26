@@ -42,23 +42,23 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
         )}
         <div className='card-div-front'>
           <div className='card-div-blurb'>
-            <h3 className='nunito'>{projectData.title}</h3>
+            <h3>{projectData.title}</h3>
             <p className='card-div'>{projectData.shortDescription}</p>
           </div>
           {projectData.time && (
             <div className='card-div-blurb'>
-              <h5 className='nunito'>{projectData.time}</h5>
+              <h5>{projectData.time}</h5>
             </div>
           )}
           <div className='card-div-blurb'>
-            <h5 className='nunito'>
+            <h5>
               <b>Skills:</b> {projectData.skills.join(', ')}
             </h5>
           </div>
           {projectData.repos && (
             <div className='card-link'>
               {projectData.repos.map(({ link, title }) => (
-                <a className='nunito card-link' href={link}>
+                <a className='nunito card-link' href={link} target='blank'>
                   <h5>{title}</h5>
                 </a>
               ))}
@@ -73,19 +73,19 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
       >
         <div className='card-div-back'>
           <div className='card-div-blurb'>
-            <h5 className='card-div nunito'>
+            <h5 className='card-div'>
               <strong>Project Description:</strong>
             </h5>
             <p className='card-div'>{projectData.projectDescription}</p>
           </div>
           <div className='card-div-blurb'>
-            <h5 className='card-div nunito'>
+            <h5 className='card-div'>
               <strong>Things I learned:</strong>
             </h5>
             <p className='card-div'>{projectData.thingsLearned}</p>
           </div>
           <div className='card-footer'>
-            <h5 className='nunito'>Skills/Tools: {projectData.skills.join(', ')}</h5>
+            <h5>Skills/Tools: {projectData.skills.join(', ')}</h5>
             {projectData.repos && (
               <div className='card-link'>
                 {projectData.repos.map(({ link, title }) => (
