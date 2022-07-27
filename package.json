@@ -1,5 +1,5 @@
 {
-  "homepage": "https://anshulkamath.github.io",
+  "homepage": "https://anshul-kamath.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
