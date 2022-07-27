@@ -5,6 +5,9 @@
   "repos": [{
     "link": "https://github.com/AMISTAD-lab/gopher-grounds-source",
     "title": "Gopher Grounds Source Code"
+  }, {
+    "link": "https://www.scitepress.org/Papers/2022/109009/109009.pdf",
+    "title": "The Gopher Ground Paper"
   }],
   "mediaAlt": "amistad lab",
   "shortDescription":
