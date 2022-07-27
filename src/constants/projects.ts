@@ -3,14 +3,16 @@ import React from 'react'
 import ProjectType from 'models/ProjectType'
 import Repository from 'models/Respository'
 
-import amazonPNG from 'resources/media/amazon.png'
-import amistadPNG from 'resources/media/amistad.png'
-import cTestingPNG from 'resources/media/cTesting.png'
-import ellipticCurvePNG from 'resources/media/ellipticCurve.png'
-import lightsMP4 from 'resources/media/lights.mp4'
-import manimMP4 from 'resources/media/manim.mp4'
-import prosperlyPNG from 'resources/media/prosperly.png'
-import swollioPNG from 'resources/media/swollio.png'
+import amazonPNG from 'resources/media/projects/amazon.png'
+import amistadPNG from 'resources/media/projects/amistad.png'
+import cTestingPNG from 'resources/media/projects/cTesting.png'
+import ellipticCurvePNG from 'resources/media/projects/ellipticCurve.png'
+import lightsGIF from 'resources/media/projects/lights.gif'
+import lightsMP4 from 'resources/media/projects/lights.mp4'
+import manimGIF from 'resources/media/projects/manim.gif'
+import manimMP4 from 'resources/media/projects/manim.mp4'
+import prosperlyPNG from 'resources/media/projects/prosperly.png'
+import swollioPNG from 'resources/media/projects/swollio.png'
 
 import amazonProjectJSON from 'resources/text/projects/amazon.json'
 import amistadProjectJSON from 'resources/text/projects/amistad.json'
@@ -37,6 +39,13 @@ export interface ProjectData {
   projectType: ProjectType // the kind of project to classify this as
   imgStyling?: React.CSSProperties // any extra styling needed for the image
 }
+
+const isSafari =
+  navigator.vendor &&
+  navigator.vendor.indexOf('Apple') > -1 &&
+  navigator.userAgent &&
+  navigator.userAgent.indexOf('CriOS') === -1 &&
+  navigator.userAgent.indexOf('FxiOS') === -1
 
 export const amazonProject: ProjectData = {
   ...amazonProjectJSON,
@@ -65,7 +74,7 @@ export const ecdsaProject: ProjectData = {
 
 export const ledLightsProject: ProjectData = {
   ...ledLightsProjectJSON,
-  media: lightsMP4,
+  media: isSafari ? lightsMP4 : lightsGIF,
   imgStyling: { objectPosition: '-80px' },
   projectType: ProjectType.PERSONAL,
 }
@@ -77,7 +86,7 @@ export const luluProject: ProjectData = {
 
 export const manimProject: ProjectData = {
   ...manimProjectJSON,
-  media: manimMP4,
+  media: isSafari ? manimMP4 : manimGIF,
   projectType: ProjectType.PERSONAL,
 }
 
