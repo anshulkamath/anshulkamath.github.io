@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2138736.css",
-    "main.js": "/static/js/main.ee048cb0.js",
+    "main.css": "/static/css/main.4c991e42.css",
+    "main.js": "/static/js/main.d22f3a75.js",
+    "static/media/manim.gif": "/static/media/manim.e94ca724e64c2a2d2aab.gif",
+    "static/media/lights.gif": "/static/media/lights.9a055641f38265fcaed1.gif",
     "static/media/lights.mp4": "/static/media/lights.a9731d60382066968241.mp4",
     "static/media/manim.mp4": "/static/media/manim.da85a8c89a4de62f97ec.mp4",
     "static/media/kamathResume.png": "/static/media/kamathResume.d1d39bf3e9875ec5c397.png",
@@ -11,11 +13,11 @@
     "static/media/amistad.png": "/static/media/amistad.1ded5f48ce5aea860bab.png",
     "static/media/swollio.png": "/static/media/swollio.ef93f0999ecfa6016ba6.png",
     "index.html": "/index.html",
-    "main.b2138736.css.map": "/static/css/main.b2138736.css.map",
-    "main.ee048cb0.js.map": "/static/js/main.ee048cb0.js.map"
+    "main.4c991e42.css.map": "/static/css/main.4c991e42.css.map",
+    "main.d22f3a75.js.map": "/static/js/main.d22f3a75.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2138736.css",
-    "static/js/main.ee048cb0.js"
+    "static/css/main.4c991e42.css",
+    "static/js/main.d22f3a75.js"
   ]
 }
