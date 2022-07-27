@@ -1,6 +1,6 @@
 {
   "title": "AMISTAD Lab",
-  "skills": ["Matplotlib, Numpy, Pandas, SQL"],
+  "skills": ["Python", "Matplotlib, Numpy, Pandas, SQL"],
   "time": "May 2021 - Present",
   "repos": [{
     "link": "https://github.com/AMISTAD-lab/gopher-grounds-source",
