@@ -59,13 +59,9 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
   // map the external links buttons
   const externalLinkButtons = (
     <div className='external-links'>
-      {navbarExternalLinks.map(({ id, title, style }) => (
+      {navbarExternalLinks.map(({ id, title, style, link }) => (
         <div id={id} key={id}>
-          <a
-            href='https://www.github.com/anshulkamath'
-            target='blank'
-            className={`menu-item-big mono ${style || ''}`}
-          >
+          <a href={link} target='blank' className={`menu-item-big mono ${style || ''}`}>
             {title}
           </a>
         </div>

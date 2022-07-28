@@ -39,7 +39,7 @@ export const headshot = {
   img: headshotPNG,
   alt: 'me',
   caption:
-    'Hi! This is me at the Berkeley Aquatic Club. I swam for this team from 2009 to 2019, and it is a huge part of who I am today.',
+    'Hi! This is me at the Berkeley Aquatic Club. I swam for this team from 2009 to 2019, and it is a huge part of who I am today. (P.S., hover over the me!)',
 }
 
 export const hiking = {
