@@ -25,7 +25,7 @@ export const catan = {
   img: catanPNG,
   alt: 'me losing at catan',
   caption:
-    'Over quarantine, I started playing board games with my family. I love the fact that you can feel the highs of winning but, as you can see here, I became pretty familiar with the lows as well.',
+    'Over quarantine, I started playing board games with my family. I love that you can feel the highs of winning but, as you can see here, I became pretty familiar with the lows as well.',
 }
 
 export const graduation = {
@@ -39,21 +39,21 @@ export const headshot = {
   img: headshotPNG,
   alt: 'me',
   caption:
-    'Hi! This is me at the Berkeley Aquatic Club. I swam for this team from 2009 to 2019, and it is a huge part of who I am today. (P.S., hover over the me!)',
+    'Hi! This is me at at my swim club from my high school days. Hover over the images and take a look at my gallery for a soft introduction - hopefully they can give you a sense of me!',
 }
 
 export const hiking = {
   img: hikingPNG,
   alt: 'me looking at a mountian on a mountain',
   caption:
-    'During my time in Seattle I went on a few hikes - needless to say, the views were breathtaking.',
+    "I wouldn't consider myself an outdoorsy person, but I love seeing nature when I can. During my time in Seattle I went on a few hikes - needless to say, the views were breathtaking.",
 }
 
 export const minigolf = {
   img: minigolfPNG,
   alt: 'me minigolfing',
   caption:
-    'Meet me before minigolfing. Some people are able to perform better when put in front of a camera. Apparently, I am not one of those people. Immediately after this picture was taken, I took 6 strokes on a par 2 hole.',
+    'Meet me before minigolfing. Immediately after this picture was taken, I took 6 strokes on a par 2 hole. Apparently I do not perform well under camera pressure 🤷🏾‍♂️.',
 }
 
 export const headshotList: HeadshotData[] = [headshot, graduation, catan, hiking, bearHug, minigolf]
