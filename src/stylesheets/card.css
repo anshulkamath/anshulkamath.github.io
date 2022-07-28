@@ -47,10 +47,11 @@
 
 .card-item-front, .card-item-front-mirrored, .card-item-back {
   background-color: white;
-  border-radius: 20px;
+  border-radius: var(--card-border-rad);
   border: 1px solid #e4e4e4;
-  margin: 1vh;
+  margin: 1vmin;
   display: inherit;
+  min-height: 100px;
 }
 
 .card-item-front-mirrored {
@@ -75,28 +76,45 @@
 div.card-div-front {
   width: 100%;
   height: 100%;
-  border-radius: inherit;
+
+  border-radius: var(--card-border-rad);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1vh;
+  justify-content: space-around;
+  padding: 2vmin;
 }
 
 div.card-div-back {
   width: 100%;
   height: 100%;
+
   text-align: start;
-  border-radius: inherit;
+  border-radius: var(--card-border-rad);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 2vh;
+
+  padding: 1.5%;
 }
 
 div.card-div-blurb {
-  margin: 10px;
+  margin: 0vh;
+}
+
+h3.card-div-blurb {
+  font-size: 2.25vmax;
+}
+
+h5.card-div-blurb {
+  font-size: 1.5vmax;
+}
+
+p.card-div-blurb {
+  font-size: 1vmax;
 }
 
 img.card-div-front, img.card-div-front-mirrored {
@@ -111,8 +129,8 @@ img.object-contain {
 }
 
 img.card-div-front {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 2vh;
+  border-bottom-left-radius: 2vh;
   border-right: 2px solid black;
 }
 
@@ -128,11 +146,12 @@ div.card-footer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
-a.card-link {
-  text-decoration: none;
+h5.card-footer {
+  justify-self: start;
+  font-size: 1.5vmax;
+  margin: 0;
 }
 
 .card-shadow {
@@ -140,7 +159,9 @@ a.card-link {
 }
 
 div.card-link {
-  margin: 1vh
+  text-decoration: none;
+  display: flex;
+  justify-self: flex-end;
 }
 
 a.card-link {
