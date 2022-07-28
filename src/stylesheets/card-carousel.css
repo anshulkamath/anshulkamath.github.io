@@ -1,0 +1,83 @@
+div.card-carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.card-carousel-container {
+  background-color: inherit;
+  width: 20vw;
+  height: 50vh;
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.card-carousel-image {
+  border-radius: 3vh;
+}
+
+.card-carousel-image {
+  width: inherit;
+  height: 50vh;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
+}
+
+button.card-carousel-image {
+  position: absolute;
+}
+
+img.card-carousel-image {
+  position: relative;
+}
+
+.card-carousel-image:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transition: all .3s ease-in-out;
+}
+
+.card-carousel-image-right, .card-carousel-image-left, .card-carousel-image-right-right, .card-carousel-image-left-left {
+  --translate-y: -1vh;
+  transform-origin: bottom center;
+}
+
+.card-carousel-image-right {
+  transform: rotateZ(7deg) translateY(var(--translate-y));
+}
+
+.card-carousel-image-left {
+  transform: rotateZ(-7deg) translateY(var(--translate-y));
+}
+
+.card-carousel-image-right-right {
+  transform: rotateZ(14deg) translateY(var(--translate-y));
+}
+
+.card-carousel-image-left-left {
+  transform: rotateZ(-14deg) translateY(var(--translate-y));
+}
+
+.card-carousel-text {
+  border-radius: 3vh;
+  background-color: white;
+  padding: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25vw;
+}
+
+.card-carousel-text:hover {
+  cursor: default;
+}
+
+.card-carousel-text-hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transition: all .3s ease-in-out;
+  transform: translateY(5vh);
+}
