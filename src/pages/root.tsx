@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react'
+import React, { useState, useCallback } from 'react'
 
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'components/modal'
 import NavBar from 'components/navbar'
@@ -19,12 +19,6 @@ const RootPage = () => {
   )
   const onChangePage = useCallback((newPage: string) => setPageId(newPage), [])
   const onHideModal = useCallback(() => setShowDevelopmentAlert(false), [])
-
-  useEffect(() => {
-    if (process.env.REACT_APP_DEBUG !== '0') {
-      setPageId(PROJECTS.id)
-    }
-  }, [])
 
   let CurrentPage
   if (pageId === HOME.id) {
