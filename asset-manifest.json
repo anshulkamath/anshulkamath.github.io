@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c991e42.css",
-    "main.js": "/static/js/main.d22f3a75.js",
+    "main.css": "/static/css/main.63e89277.css",
+    "main.js": "/static/js/main.52a77fa2.js",
     "static/media/manim.gif": "/static/media/manim.e94ca724e64c2a2d2aab.gif",
     "static/media/lights.gif": "/static/media/lights.9a055641f38265fcaed1.gif",
+    "static/media/minigolf.png": "/static/media/minigolf.e0d9ea53abaaacaddb02.png",
+    "static/media/hiking.png": "/static/media/hiking.fbed8a61545767639b6c.png",
     "static/media/lights.mp4": "/static/media/lights.a9731d60382066968241.mp4",
     "static/media/manim.mp4": "/static/media/manim.da85a8c89a4de62f97ec.mp4",
     "static/media/kamathResume.png": "/static/media/kamathResume.d1d39bf3e9875ec5c397.png",
+    "static/media/bear-hug.png": "/static/media/bear-hug.8e79522abf60f89ca815.png",
+    "static/media/graduation.png": "/static/media/graduation.85d14d9e962d3393eb3a.png",
     "static/media/amazon.png": "/static/media/amazon.eb264ee34b7cdde878c0.png",
     "static/media/ellipticCurve.png": "/static/media/ellipticCurve.c31a631fbbd34be771b4.png",
     "static/media/cTesting.png": "/static/media/cTesting.822669fc486032efcdb1.png",
+    "static/media/catan.png": "/static/media/catan.bfecc0f74f0654f11c89.png",
+    "static/media/headshot.png": "/static/media/headshot.c1e5959dba4b02a6e819.png",
     "static/media/amistad.png": "/static/media/amistad.1ded5f48ce5aea860bab.png",
     "static/media/swollio.png": "/static/media/swollio.ef93f0999ecfa6016ba6.png",
     "index.html": "/index.html",
-    "main.4c991e42.css.map": "/static/css/main.4c991e42.css.map",
-    "main.d22f3a75.js.map": "/static/js/main.d22f3a75.js.map"
+    "main.63e89277.css.map": "/static/css/main.63e89277.css.map",
+    "main.52a77fa2.js.map": "/static/js/main.52a77fa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c991e42.css",
-    "static/js/main.d22f3a75.js"
+    "static/css/main.63e89277.css",
+    "static/js/main.52a77fa2.js"
   ]
 }
