@@ -21,7 +21,7 @@ const RootPage = () => {
   const onHideModal = useCallback(() => setShowDevelopmentAlert(false), [])
 
   useEffect(() => {
-    if (process.env.REACT_APP_DEBUG) {
+    if (process.env.REACT_APP_DEBUG !== '0') {
       setPageId(PROJECTS.id)
     }
   }, [])
