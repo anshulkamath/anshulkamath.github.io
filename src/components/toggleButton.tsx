@@ -8,6 +8,14 @@ interface ToggleButtonProps {
   title: string
 }
 
+/**
+ * Creates a toggleable button
+ * @param toggled Whether or not the button is toggled (to be controlled by parent)
+ * @param setToggled A function used to update the toggled state
+ * @param title The title to use for the toggle button
+ *
+ * @returns A React component
+ */
 const ToggleButton: React.FunctionComponent<ToggleButtonProps> = ({
   toggled,
   setToggled,
