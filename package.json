@@ -2,7 +2,7 @@
   "homepage": "https://anshul-kamath.com",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "cp CNAME build/ && gh-pages -d build",
     "start": "source .env && react-scripts start",
     "start:prod": "react-scripts start",
     "build": "react-scripts build",
