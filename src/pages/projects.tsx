@@ -9,13 +9,21 @@ import 'stylesheets/projects.css'
 import 'stylesheets/card.css'
 
 const ProjectsPage: React.FunctionComponent = () => {
-  const { [ProjectType.PERSONAL]: personalProjects, [ProjectType.WORK]: workProjects } =
-    projectLists
-
-  const projectsList = personalProjects.concat(workProjects)
+  const {
+    [ProjectType.PERSONAL]: personalProjects,
+    [ProjectType.WORK]: workProjects,
+    [ProjectType.ALL]: allProjects,
+  } = projectLists
 
   const [projectsToggled, setProjectsToggled] = useState(true)
   const [experienceToggled, setExperienceToggled] = useState(false)
+
+  const projectsList =
+    (projectsToggled && experienceToggled && allProjects) ||
+    (projectsToggled && personalProjects) ||
+    (experienceToggled && workProjects) ||
+    []
+
   const [cardsFlipped, setCardsFlipped] = useState(Array(projectsList.length).fill(false))
 
   const onProjectToggle = useCallback((p: boolean) => setProjectsToggled(p), [])
@@ -31,19 +39,15 @@ const ProjectsPage: React.FunctionComponent = () => {
     [cardsFlipped],
   )
 
-  const projectCards = projectsList.map(
-    (projectData: ProjectData, i: number) =>
-      ((projectsToggled && projectData.projectType === ProjectType.PERSONAL) ||
-        (experienceToggled && projectData.projectType === ProjectType.WORK)) && (
-        <ProjectCard
-          key={projectData.title}
-          cardFlipped={cardsFlipped[i]}
-          onClick={() => onCardPressedCallback(i)}
-          projectData={projectData}
-          mirrored={Boolean(i % 2)}
-        />
-      ),
-  )
+  const projectCards = projectsList.map((projectData: ProjectData, i: number) => (
+    <ProjectCard
+      key={projectData.title}
+      cardFlipped={cardsFlipped[i]}
+      onClick={() => onCardPressedCallback(i)}
+      projectData={projectData}
+      mirrored={Boolean(i % 2)}
+    />
+  ))
 
   return (
     <div className='projects-container'>
