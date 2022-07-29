@@ -10,7 +10,7 @@ interface NavItem {
 }
 
 // navbar links
-export const BADGE = { id: '#badge', title: 'anshul_kamath' }
+export const BADGE = { id: '#badge', title: 'anshul-kamath' }
 export const HOME = { id: '#home', title: 'hello_world!' }
 export const PROJECTS = { id: '#projects', title: 'projects' }
 export const RESUME = { id: '#resume', title: 'resume' }

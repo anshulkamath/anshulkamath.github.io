@@ -39,7 +39,7 @@ export const headshot = {
   img: headshotPNG,
   alt: 'me',
   caption:
-    'Hi! This is me at at my swim club from my high school days. Hover over the images and take a look at my gallery for a soft introduction - hopefully they can give you a sense of me!',
+    'Hi! This is me at at my swim club from my high school days. Hover over the images and take a look at my gallery for a soft introduction - hopefully they can give you a sense of who I am!',
 }
 
 export const hiking = {

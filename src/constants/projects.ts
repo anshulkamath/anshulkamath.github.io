@@ -123,5 +123,17 @@ export const projectLists = {
     manimProject,
     shellProject,
   ],
-  [ProjectType.WORK]: [amazonProject, prosperlyProject, luluProject, amistadProject],
+  [ProjectType.WORK]: [amazonProject, amistadProject, prosperlyProject, luluProject],
+  [ProjectType.ALL]: [
+    amazonProject,
+    amistadProject,
+    ecdsaProject,
+    prosperlyProject,
+    ledLightsProject,
+    swollioProject,
+    websiteProject,
+    cTestingProject,
+    manimProject,
+    shellProject,
+  ],
 }

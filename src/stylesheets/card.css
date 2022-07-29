@@ -16,6 +16,10 @@
   justify-content: center;
 
   margin: 2vh;
+
+  transition: all 0.3s ease-in-out;
+
+  --footer-text-size: 1.25vmax;
 }
 
 /* Flippable card properties */
@@ -110,7 +114,7 @@ h3.card-div-blurb {
 }
 
 h5.card-div-blurb {
-  font-size: 1.5vmax;
+  font-size: var(--footer-text-size);
 }
 
 p.card-div-blurb {
@@ -142,15 +146,16 @@ img.card-div-front-mirrored {
 
 
 div.card-footer {
-  padding: inherit;
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h5.card-footer {
   justify-self: start;
-  font-size: 1.5vmax;
+  font-size: var(--footer-text-size);
   margin: 0;
 }
 
@@ -161,7 +166,7 @@ h5.card-footer {
 div.card-link {
   text-decoration: none;
   display: flex;
-  justify-self: flex-end;
+  flex-direction: column;
 }
 
 a.card-link {

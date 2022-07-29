@@ -94,7 +94,7 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
               <div className='card-link'>
                 {projectData.repos.map(({ link, title }) => (
                   <a key={title} className='nunito card-link' href={link}>
-                    <h5>{title}</h5>
+                    <h5 className='card-footer'>{title}</h5>
                   </a>
                 ))}
               </div>

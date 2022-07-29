@@ -38,7 +38,7 @@ img.card-carousel-image {
 }
 
 .card-carousel-image-right, .card-carousel-image-left, .card-carousel-image-right-right, .card-carousel-image-left-left {
-  --translate-y: -1vh;
+  --translate-y: 1vh;
   transform-origin: bottom center;
 }
 
