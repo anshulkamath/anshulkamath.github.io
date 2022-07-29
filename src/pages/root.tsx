@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react'
 
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'components/modal'
 import NavBar from 'components/navbar'
-import devAlertModal from 'constants/devAlertModal'
+import disclaimer from 'constants/disclaimer'
 import { HOME, PROJECTS, RESUME } from 'constants/navbar'
 
 import HomePage from './home'
@@ -40,9 +40,9 @@ const RootPage = () => {
         </div>
       </div>
       <Modal open={showDevelopmentAlert} onClose={onHideModal}>
-        <ModalHeader title={devAlertModal.title} />
-        <ModalBody body={devAlertModal.message} />
-        <ModalFooter closeTitle={devAlertModal.closeButton} onClose={onHideModal} />
+        <ModalHeader title={disclaimer.title} />
+        <ModalBody body={disclaimer.message} />
+        <ModalFooter closeTitle={disclaimer.closeButton} onClose={onHideModal} />
       </Modal>
     </>
   )

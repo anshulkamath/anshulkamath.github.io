@@ -12,6 +12,7 @@ interface PhotoData {
 interface CardCarouselProps {
   photoList: PhotoData[]
   showCaptions?: boolean
+  setSpy?: (x: boolean) => void
 }
 
 /**
@@ -19,10 +20,15 @@ interface CardCarouselProps {
  *
  * @param photoList A list of photos that will be used to make the card carousel
  * @param showCaptions A boolean to control if the captions should be shown or not
+ * @param setSpy A callback to allow the component to manipulate parent state when the carousel is hovered over
  *
  * @returns A React component
  */
-const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({ photoList, showCaptions }) => {
+const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
+  photoList,
+  showCaptions,
+  setSpy = () => {},
+}) => {
   const maxZ = 5
   const [photoIndex, setPhotoIndex] = useState(0)
   const [zIndices, setZIndices] = useState([3, 2, 1, 0, 0, 0])
@@ -59,8 +65,15 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({ photoList, s
     setZIndices(populateZIndices(indices, newPhotoIndex))
   }
 
-  const onShowPhotos = useCallback(() => setShowPhotos(true), [])
-  const onHidePhotos = useCallback(() => setShowPhotos(false), [])
+  const onShowPhotos = useCallback(() => {
+    setSpy(true)
+    setShowPhotos(true)
+  }, [])
+
+  const onHidePhotos = useCallback(() => {
+    setSpy(false)
+    setShowPhotos(false)
+  }, [])
 
   const cardTextClass = showPhotos ? ' card-carousel-text-hover' : ''
 
@@ -129,6 +142,7 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({ photoList, s
 
 CardCarousel.defaultProps = {
   showCaptions: false,
+  setSpy: () => {},
 }
 
 export default CardCarousel
