@@ -11,19 +11,82 @@
   width: 75vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   --section-heading: 2vw;
+  --top-position: 15vh;
 }
 
 .introducing-me {
-  top: 15vh;
-  
+  top: var(--top-position);
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: start;
 
   font-size: var(--section-heading);
+
+  flex: 1;
+
+  margin: 1vw;
+}
+
+.basic-info-container, .basic-info-heading {
+  top: var(--top-position);
+  flex: 2;
+  margin: 1vw;
+  align-items: flex-start;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.basic-info-heading {
+  font-size: var(--section-heading);
+}
+
+.basic-info {
+  margin: 1vw;
+  background-color: white;
+  border-radius: var(--card-border-rad);
+  padding: 2vh;
+  width: 100%;
+  font-size: 1.25vw;
+
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
+}
+
+.basic-info-hover, .basic-info:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transition: all .3s ease-in-out;
+}
+
+.basic-info-hover {
+  transform: translateX(5vw);
+}
+
+.basic-info-json {
+  padding: 2vh;
+  text-align: start;
+}
+
+.basic-info-red {
+  color: var(--bs-red);
+}
+
+.basic-info-blue {
+  color: var(--bs-primary);
+}
+
+.basic-info-green {
+  color: var(--bs-green);
+}
+
+.basic-info-orange {
+  color: var(--bs-orange);
 }

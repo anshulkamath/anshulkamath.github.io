@@ -13,6 +13,7 @@ import manimGIF from 'resources/media/projects/manim.gif'
 import manimMP4 from 'resources/media/projects/manim.mp4'
 import prosperlyPNG from 'resources/media/projects/prosperly.png'
 import swollioPNG from 'resources/media/projects/swollio.png'
+import websitePNG from 'resources/media/projects/website.png'
 
 import amazonProjectJSON from 'resources/text/projects/amazon.json'
 import amistadProjectJSON from 'resources/text/projects/amistad.json'
@@ -109,8 +110,9 @@ export const swollioProject: ProjectData = {
 
 export const websiteProject: ProjectData = {
   ...websiteProjectJSON,
-  media: ellipticCurvePNG,
+  media: websitePNG,
   projectType: ProjectType.PERSONAL,
+  imgStyling: { objectPosition: '-70px' },
 }
 
 export const projectLists = {
