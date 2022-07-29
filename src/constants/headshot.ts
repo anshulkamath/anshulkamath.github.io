@@ -26,6 +26,9 @@ export const catan = {
   alt: 'me losing at catan',
   caption:
     'Over quarantine, I started playing board games with my family. I love that you can feel the highs of winning but, as you can see here, I became pretty familiar with the lows as well.',
+  style: {
+    objectPosition: '0px -80px',
+  },
 }
 
 export const graduation = {
@@ -33,6 +36,9 @@ export const graduation = {
   alt: 'me graduating !!',
   caption:
     'I spent the first 18 years of my life in a little place called Millburn, New Jersey. This picture commemorates the day I was told I could no longer stay :( (colorized, 6/23/2019).',
+  style: {
+    objectPosition: '0px -10px',
+  },
 }
 
 export const headshot = {
