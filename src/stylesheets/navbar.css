@@ -1,4 +1,4 @@
-.custom-navbar {
+.navbar-container {
     position: sticky;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 20px 0 rgba(0, 0, 0, 0.5);
@@ -13,30 +13,36 @@
     justify-content: center;
 
     z-index: 10;
-    border-bottom-left-radius: 20pt;
-    border-bottom-right-radius: 20pt;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+    --link-border-rad: 1.5vh;
 }
 
-.navbar-menu {
-    list-style-type: none;
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1vmax;
 }
 
 /* Styling to create badge in top left */
 .navbar-badge {
     padding: 1vh;
     background-color: var(--bs-primary);
-    border-radius: 1vw;
+    border-radius: var(--card-border-rad);
     color: white;
     width: max-content;
     display: flex;
     flex-direction: row;
-    margin: 1vw;
 }
 
 .badge-font {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
-    color: var(--bs-light)
+    font-size: 1vmax;
+    color: var(--bs-light);
 }
 
 .badge-item {
@@ -49,7 +55,6 @@
 
 /* Navbar page elements */
 .menu-item, .menu-item-big {
-    margin: 4vh;
     font-size: 1vw;
 }
 
@@ -65,7 +70,6 @@
 .clicked-item {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
-    margin-left: -4vh;
     padding: 0vw;
     color: var(--bs-light);
     background-color: inherit;
@@ -74,12 +78,11 @@
 /* external link styling */
 .external-links {
     display: inherit;
-
 }
 
 .external-links > a:active, a:link, a:visited, a:hover {
     color: white;
-    border-radius: 10px;
+    border-radius: var(--link-border-rad);
     text-decoration: none;
 }
 

@@ -41,17 +41,15 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
           />
         )}
         <div className='card-div-front'>
-          <div className='card-div-blurb'>
-            <h3>{projectData.title}</h3>
-            <p className='card-div'>{projectData.shortDescription}</p>
-          </div>
+          <h3 className='card-div-blurb'>{projectData.title}</h3>
+          <p className='card-div-blurb'>{projectData.shortDescription}</p>
           {projectData.time && (
             <div className='card-div-blurb'>
               <h5>{projectData.time}</h5>
             </div>
           )}
           <div className='card-div-blurb'>
-            <h5>
+            <h5 className='card-div-blurb'>
               <b>Skills:</b> {projectData.skills.join(', ')}
             </h5>
           </div>
@@ -65,7 +63,7 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
                   target='blank'
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <h5>{title}</h5>
+                  <h5 className='card-div-blurb'>{title}</h5>
                 </a>
               ))}
             </div>
@@ -79,19 +77,19 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
       >
         <div className='card-div-back'>
           <div className='card-div-blurb'>
-            <h5 className='card-div'>
+            <h5 className='card-div-blurb'>
               <strong>Project Description:</strong>
             </h5>
             <p className='card-div'>{projectData.projectDescription}</p>
           </div>
           <div className='card-div-blurb'>
-            <h5 className='card-div'>
+            <h5 className='card-div-blurb'>
               <strong>Things I learned:</strong>
             </h5>
-            <p className='card-div'>{projectData.thingsLearned}</p>
+            <p className='card-div-blurb'>{projectData.thingsLearned}</p>
           </div>
           <div className='card-footer'>
-            <h5>Skills/Tools: {projectData.skills.join(', ')}</h5>
+            <h5 className='card-footer'>Skills/Tools: {projectData.skills.join(', ')}</h5>
             {projectData.repos && (
               <div className='card-link'>
                 {projectData.repos.map(({ link, title }) => (

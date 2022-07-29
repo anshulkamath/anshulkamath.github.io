@@ -70,10 +70,12 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
   )
 
   return (
-    <div className='custom-navbar'>
-      {badge}
-      {navPages}
-      {externalLinkButtons}
+    <div className='navbar-container'>
+      <div className='navbar'>
+        {badge}
+        {navPages}
+        {externalLinkButtons}
+      </div>
     </div>
   )
 }

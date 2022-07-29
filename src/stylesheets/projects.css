@@ -30,7 +30,7 @@
 div.project-toggle-on {
   background-color: var(--bs-primary);
   padding: 1.5vw;
-  border-radius: 20px;
+  border-radius: var(--card-border-rad);
 }
 
 button.project-toggle-on, h2.project-toggle-on {
