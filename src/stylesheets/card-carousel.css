@@ -6,7 +6,7 @@ div.card-carousel-container {
 
 button.card-carousel-container {
   background-color: inherit;
-  width: 20vw;
+  width: 25vw;
   height: 30vw;
   display: flex;
   margin-bottom: 2vh;
@@ -24,7 +24,7 @@ button.card-carousel-container {
   transition: all .3s ease-in-out;
 }
 
-button.card-carousel-image {
+div.card-carousel-image {
   position: absolute;
 }
 

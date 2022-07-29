@@ -12,9 +12,6 @@ const HomePage: React.FunctionComponent = () => (
         <h3 className='introducing-me'>Introducing: Me!</h3>
         <CardCarousel photoList={headshotList} showCaptions />
       </div>
-      <div className='basic-info'>
-        Here is some basic info about me! I am a coder beep boop bop biddity boop
-      </div>
     </div>
   </div>
 )

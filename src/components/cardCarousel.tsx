@@ -97,14 +97,19 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({ photoList, s
           }
 
           return (
-            <button
-              type='submit'
+            <div
+              key={photo.alt}
               className={`card-carousel-image${rotationTransform}`}
               onClick={() => onClick(photoIndex, zIndices, skipNumber)}
-              style={{ ...photo.style, zIndex: zIndices[i] }}
+              style={{ zIndex: zIndices[i] }}
             >
-              <img className='card-carousel-image' src={photo.img} alt={photo.alt} />
-            </button>
+              <img
+                className='card-carousel-image'
+                src={photo.img}
+                alt={photo.alt}
+                style={photo.style}
+              />
+            </div>
           )
         })}
       </button>
