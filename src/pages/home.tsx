@@ -17,7 +17,7 @@ const HomePage: React.FunctionComponent = () => {
     <div className='home-container'>
       <div className='home-content'>
         <div className='introducing-me'>
-          <h3 className='introducing-me'>Introducing: Me!</h3>
+          <h3 className='introducing-me'>Introducing: me!</h3>
           <CardCarousel photoList={headshotList} showCaptions setSpy={setPhotoSpy} />
         </div>
         <div className='basic-info-container'>

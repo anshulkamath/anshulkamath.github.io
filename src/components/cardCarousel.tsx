@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 
 import 'stylesheets/card-carousel.css'
 
@@ -74,6 +74,38 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
     setSpy(false)
     setShowPhotos(false)
   }, [])
+
+  let cumulativeX = 0
+  const onScrollHandler = (e: WheelEvent) => {
+    if (!showPhotos) return
+
+    cumulativeX += e.deltaX
+    cumulativeX *= Number(showPhotos)
+
+    const SCROLL_THRESHOLD = 50
+    if (cumulativeX > SCROLL_THRESHOLD && photoIndex < zIndices.length - 1) {
+      increaseIndex(photoIndex, zIndices, 1)
+      cumulativeX = 0
+    }
+
+    if (cumulativeX < -SCROLL_THRESHOLD && photoIndex > 0) {
+      decreaseIndex(photoIndex, zIndices, 1)
+      cumulativeX = 0
+    }
+  }
+
+  useEffect(() => {
+    const content = document.getElementById('body')
+    if (!content) return () => {}
+    content.style.overflow = 'hidden'
+
+    window.addEventListener('wheel', onScrollHandler, { passive: true })
+
+    return () => {
+      content.style.overflow = 'visible'
+      window.removeEventListener('wheel', onScrollHandler)
+    }
+  })
 
   const cardTextClass = showPhotos ? ' card-carousel-text-hover' : ''
 

@@ -64,6 +64,10 @@
   transition: var(--transition-type);
 }
 
+.basic-info > p {
+  margin-bottom: 0;
+}
+
 .basic-info-hover, .basic-info:hover, .basic-info-json:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transition: var(--transition-type);
