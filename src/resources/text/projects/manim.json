@@ -7,9 +7,9 @@
   }],
   "mediaAlt": "elliptic curve",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Being able to visualize mathematical concepts gives me a deeper understanding of (and appreciation for) the subject. As a freshman in college, I made these visualizations to supplement my own learning and cultivate my passion for math.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "I've always been a math enthusiast due to the inherent puzzle-like nature of the field. As a high schooler, I loved watching YouTube videos by 3Blue1Brown, a popular math animator. His animations helped me gain intuition for some mathematical concepts such as Taylor Series, Linear Transformations, and Change of Basis. However, I did not want this intuition to be limited to the videos that he has made, so I decided to learn how to make the animations myself. These projects were created using manim (an animation library that he created).",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "I had never used an open-source codebase before manim. Thus, I had to figure out how to learn the software - I scoured online documentation to see how to start, dug into the library code to see which features were deprecated and how to fix them, and had to teach myself how to code in a new framework with its own idioms."
 }

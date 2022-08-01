@@ -1,15 +1,15 @@
 {
-  "title": "Shell (in progress!)",
-  "skills": ["C", "Shell", "RegEx"],
+  "title": "ANShell (in progress!)",
+  "skills": ["C", "Shell", "RegEx", "Programming Languages"],
   "repos": [{
     "link": "https://github.com/anshulkamath/shell",
     "title": "Source Code"
   }],
   "mediaAlt": "shell",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Creating a minimal dependency shell in C.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Shell is a basic programming language that allows the user to access operating system services via the command line. This project first reimplements the common shell Bash, and then implements `A New Shell,` or ANShell for short. As of now, the project is still in progress. This page will be updated as time goes on.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "This project will utilize many concepts from Programming Languages such as: parsing, tokens, grammars, abstract syntaxes, and type-checking."
 }

@@ -1,15 +1,15 @@
 {
   "title": "Cryptography Project",
-  "skills": ["C"],
+  "skills": ["C", "Public / Private Key Encryption"],
   "repos": [{
     "link": "https://github.com/anshulkamath/cryptography",
     "title": "Source Code"
   }],
   "mediaAlt": "elliptic curve",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "A minimal dependency cryptography library written in C. The main goal of this project was to implement the Elliptic Curve Digital Signature Algorithm.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Two of my biggest passions are low level systems and number theory. This cryptography project is a perfect marriage of those two subjects. The overarching goal of this project was to implement ECDSA, a digital encryption algorithm, from scratch in C. I learned how to represent and operate on numbers of arbitrary length, how elliptic curve signatures work, and how to protect against malicious agents using side-channel attacks to break the algorithm.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "From the first objective, this project taught me how the computer represents numbers as bits, and how I could manipulate these bit representations to gain a new numerical system that extends the system's limits. Next, I learned about the importance of optimizing my code to increase the performance of the base operations, since these base operations are used many times in a single signature or verification. Finally, I learned how public / private key encryption works, and understood the ECDSA algorithm from a more theoretic perspective."
 }

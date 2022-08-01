@@ -4,9 +4,9 @@
   "time": "December 2020 - March 2021",
   "mediaAlt": "lulu app",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Improving code quality one step at a time: standardizing a fragmented codebase and optimizing performance",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "My job at Lulu was two-fold - first I was tasked with refactoring the whole backend codebase to increase readability of the code. This refactoring entailed migrating all of the serverless functions to a single, REST-compliant Express server. Next, I was tasked with finding structural bottlenecks in the code to decrease latency between the frontend and backend.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "Lulu taught me how to profile and analyze poorly designed code to find structural bottlenecks - these bottlenecks include capitalizing on opportunities for parallelization and reducing the computational and logical complexity of some blocks of code. These optimizations led to a 500% increase in performance (measured by P99 time per request) and a reduction from 20 API failures a day to 0."
 }

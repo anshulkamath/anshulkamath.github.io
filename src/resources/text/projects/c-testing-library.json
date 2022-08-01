@@ -1,15 +1,15 @@
 {
   "title": "C Testing Library",
-  "skills": ["C"],
+  "skills": ["C", "Preprocessing"],
   "repos": [{
     "link": "https://github.com/anshulkamath/c-testing-lib",
     "title": "Source Code"
   }],
   "mediaAlt": "elliptic curve",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Who doesn't love testing? I created a simple testing logger to use for my C projects. Long live test-driven development!",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "When I started making side projects in C, I always had to create ad hoc methods to unit test my code. After a few projects, I decided that I wanted to have a single library to handle all my tests. Thus, I created a library to run my unit tests. This library creates a testing logger struct in dynamic memory (a linked list node) and checks the assertion given as an argument. If the assertion is false, the logger adds a node to the linked list along with some metadata. By doing so, I was able to create a simple and easy-to-use testing logger that informs me of which tests are failing.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "In order to make an easy-to-use testing logger, I had to find a way to abstract out all of the memory allocation/deallocation, under-the-hood linked list mutations, and encode metadata such as which line the failing test is on. I was able to leverage the macros and the C preprocessor to make these abstractions, thereby allowing myself to distill the core functionality of the testing logger into three functions: an initialization function, an `expects` assertion function, and a `log tests` function."
 }

@@ -1,15 +1,15 @@
 {
   "title": "anshulkamath.com",
-  "skills": ["Typescript", "React"],
+  "skills": ["Typescript", "React", "HTML", "CSS"],
   "repos": [{
     "link": "https://github.com/anshulkamath/anshul-kamath.com",
     "title": "Source Code"
   }],
   "mediaAlt": "anshulkamath.com",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "The project for the very website you are reading this text on. A personal portfolio for myself (because apparently all the cool kids have one nowadays).",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "This personal portfolio was created as an easy way to introduce recruiters to myself and my professional work. Here, recruiters are able to find images of me to learn about my background, projects created by me to study my interests and experiences, and my resume to see my qualifications.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "This was the first website that I created as a side project. I was already familiar with React, but I had only ever used library components. I decided to make this website from scratch, so I became much more familiar with HTML and CSS, as well as how the DOM works."
 }
