@@ -69,7 +69,7 @@
 /* For 'raising card' effect */
 .card-shadow-animation {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-  transition: all .3s ease-in-out;
+  transition: var(--transition-type);
 }
 
 .card-shadow-animation:hover {
@@ -99,7 +99,7 @@ div.card-div-back {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
 
   padding: 1.5%;
@@ -110,15 +110,26 @@ div.card-div-blurb {
 }
 
 h3.card-div-blurb {
-  font-size: 2.25vmax;
+  font-size: 2.5vmax;
+  font-weight: 700;
+}
+
+h4.card-div-blurb {
+  font-weight: 300;
+  font-size: 1.5vmax;
 }
 
 h5.card-div-blurb {
+  font-weight: 300;
   font-size: var(--footer-text-size);
 }
 
 p.card-div-blurb {
   font-size: 1vmax;
+}
+
+b.card-div-blurb {
+  font-weight: 700;
 }
 
 img.card-div-front, img.card-div-front-mirrored {
@@ -171,7 +182,7 @@ div.card-link {
 
 a.card-link {
   color: var(--bs-primary);
-  transition: all .3s ease-in-out;
+  transition: var(--transition-type);
 }
 
 a.card-link:hover {

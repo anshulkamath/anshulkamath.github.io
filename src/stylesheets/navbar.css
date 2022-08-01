@@ -5,6 +5,7 @@
 
     top: 0vh;
     width: 100vw;
+    min-height: 30px;
 
     display: flex;
     flex-direction: row;
@@ -22,20 +23,22 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 80%;
     padding: 1vmax;
+    min-height: inherit;
 }
 
 /* Styling to create badge in top left */
 .navbar-badge {
-    padding: 1vh;
+    padding: 1vmin;
     background-color: var(--bs-primary);
     border-radius: var(--card-border-rad);
     color: white;
     width: max-content;
     display: flex;
     flex-direction: row;
+    font-size: 2vw;
 }
 
 .badge-font {
@@ -50,7 +53,7 @@
 }
 
 .badge-item, .menu-item, .menu-item-big {
-    height: 2.5vh;
+    height: 50%;
 }
 
 /* Navbar page elements */
@@ -59,8 +62,8 @@
 }
 
 .menu-item-big {
-    margin: 1vw;
-    padding: 1vh;
+    margin: 1vmax;
+    padding: 1vmin;
 }
 
 .clickable {

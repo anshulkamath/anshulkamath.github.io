@@ -51,7 +51,7 @@ button.modal-footer {
   color: white;
   padding: 1vh;
   border-radius: var(--card-border-rad);
-  transition: all .3s ease-in-out;
+  transition: var(--transition-type);
   font-size: 1vmax;
   z-index: 1; /* to remove weird box which comes from overlapping */
 }

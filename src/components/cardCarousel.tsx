@@ -79,9 +79,8 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
 
   return (
     <div className='card-carousel-container'>
-      <button
-        type='submit'
-        className='card-carousel-container'
+      <div
+        className='card-carousel-img-container'
         onMouseEnter={onShowPhotos}
         onMouseLeave={onHidePhotos}
       >
@@ -125,16 +124,15 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
             </div>
           )
         })}
-      </button>
+      </div>
       {showCaptions && (
-        <button
-          type='submit'
+        <div
           className={`card-carousel-text${cardTextClass}`}
           onMouseEnter={onShowPhotos}
           onMouseLeave={onHidePhotos}
         >
           {photoList[photoIndex].caption}
-        </button>
+        </div>
       )}
     </div>
   )

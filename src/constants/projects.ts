@@ -76,7 +76,6 @@ export const ecdsaProject: ProjectData = {
 export const ledLightsProject: ProjectData = {
   ...ledLightsProjectJSON,
   media: isSafari ? lightsMP4 : lightsGIF,
-  imgStyling: { objectPosition: '-80px' },
   projectType: ProjectType.PERSONAL,
 }
 
@@ -119,8 +118,8 @@ export const projectLists = {
   [ProjectType.PERSONAL]: [
     ecdsaProject,
     ledLightsProject,
-    swollioProject,
     websiteProject,
+    swollioProject,
     cTestingProject,
     manimProject,
     shellProject,
@@ -132,8 +131,8 @@ export const projectLists = {
     ecdsaProject,
     prosperlyProject,
     ledLightsProject,
-    swollioProject,
     websiteProject,
+    swollioProject,
     cTestingProject,
     manimProject,
     shellProject,

@@ -4,6 +4,7 @@
   background-color: inherit;
   font-family: Nunito;
   --card-border-rad: 2vh;
+  --transition-type: all .3s ease-in-out;
 }
 
 body {
