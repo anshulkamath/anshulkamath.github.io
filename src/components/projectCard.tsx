@@ -63,7 +63,7 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
                   target='blank'
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <h5 className='card-div-blurb'>{title}</h5>
+                  <h5 className='card-footer'>{title}</h5>
                 </a>
               ))}
             </div>
