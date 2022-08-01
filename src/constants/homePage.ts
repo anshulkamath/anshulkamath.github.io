@@ -2,7 +2,7 @@ import { getYearsSinceDate } from 'util/date'
 
 export interface JSONEntry {
   key: string
-  value: string | number
+  value: string | number | string[]
 }
 
 export const welcomePageText =
@@ -18,6 +18,6 @@ export const anshulJSONList: JSONEntry[] = [
   { key: 'school', value: '"Harvey Mudd College"' },
   { key: 'graduation_date', value: '"May 2023"' },
   { key: 'home', value: '"Millburn, NJ"' },
-  { key: 'favorite_movies', value: '["Good Will Hunting", "Inception"]' },
+  { key: 'passsions', value: ['Low-Level Systems', 'Math', 'Backend'] },
   { key: 'major', value: '"Joint Computer Science & Math"' },
 ]

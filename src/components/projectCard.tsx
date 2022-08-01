@@ -42,15 +42,15 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
         )}
         <div className='card-div-front'>
           <h3 className='card-div-blurb'>{projectData.title}</h3>
-          <p className='card-div-blurb'>{projectData.shortDescription}</p>
+          <h4 className='card-div-blurb'>{projectData.shortDescription}</h4>
           {projectData.time && (
             <div className='card-div-blurb'>
-              <h5>{projectData.time}</h5>
+              <h4 className='card-div-blurb'>{projectData.time}</h4>
             </div>
           )}
           <div className='card-div-blurb'>
             <h5 className='card-div-blurb'>
-              <b>Skills:</b> {projectData.skills.join(', ')}
+              <b className='card-div-blurb'>Skills:</b> {projectData.skills.join(', ')}
             </h5>
           </div>
           {projectData.repos && (
@@ -78,18 +78,20 @@ export const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
         <div className='card-div-back'>
           <div className='card-div-blurb'>
             <h5 className='card-div-blurb'>
-              <strong>Project Description:</strong>
+              <b className='card-div-blurb'>Project Description:</b>
             </h5>
-            <p className='card-div'>{projectData.projectDescription}</p>
+            <p className='card-div-blurb'>{projectData.projectDescription}</p>
           </div>
           <div className='card-div-blurb'>
             <h5 className='card-div-blurb'>
-              <strong>Things I learned:</strong>
+              <b className='card-div-blurb'>Things I learned:</b>
             </h5>
             <p className='card-div-blurb'>{projectData.thingsLearned}</p>
           </div>
           <div className='card-footer'>
-            <h5 className='card-footer'>Skills/Tools: {projectData.skills.join(', ')}</h5>
+            <h5 className='card-footer'>
+              <b>Skills/Tools:</b> {projectData.skills.join(', ')}
+            </h5>
             {projectData.repos && (
               <div className='card-link'>
                 {projectData.repos.map(({ link, title }) => (
