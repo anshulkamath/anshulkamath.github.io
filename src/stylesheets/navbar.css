@@ -38,13 +38,12 @@
     width: max-content;
     display: flex;
     flex-direction: row;
-    font-size: 2vw;
 }
 
 .badge-font {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
-    font-size: 1vmax;
+    font-size: 1vw;
     color: var(--bs-light);
 }
 
