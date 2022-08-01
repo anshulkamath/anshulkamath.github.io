@@ -13,9 +13,9 @@
   ],
   "mediaAlt": "swollio",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "During the height of the COVID-19 pandemic, my friend and I were forced to lift in his basement since all the gyms were closed. We decided to make an app to track our progress.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "The Swollio app was originally meant to allow users to track their workout. However, as time went on, we added functionality to allow for coaches and athletes as well. A workout was tracked by logging sets, reps, and weights for a given exercise and then aggregating and graphing the data on a chart. Similarly, coaches are able to assign workouts to his/her/their athletes' and track their progress. ",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "The app had three parts in constant development - the database layer to handle user data, the backend layer to handle business logic, and the frontend layer to handle presentation. We learned how to leverage relational data, how to query databases from the backend business logic layer, and how to ping APIs from the frontend. Furthermore, we gained experience with each of the technologies/frameworks we worked with (all of which are listed below). Finally, we were able to publish our app to Apple's App store while hosting our project on Google Cloud Platform."
 }

@@ -4,9 +4,9 @@
   "skills": ["React", "Redux", "AWS Services (Lambda, API Gateway, S3, CloudFormation, CloudFront, CloudWatch)"],
   "mediaAlt": "amazon",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Designed and developed a web dashboard for the Amazon Smart Air Quality Monitor.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "The Air Quality Monitor is a new device created by the Amazon Branded Connected Devices team, and at the start of my internship it did not have a web dashboard. My job was to design and implement this dashboard to display the customer's air quality data. Additionally, I architected and developed a backend service to serve mock data to the frontend, since the frontend was unable to ping the Alexa service due to an unsatisfied CORS requirement. Finally, I added authorization to the website using Login With Amazon.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "During this internship, I learned how to use React and Redux to create a single page website that displays customer data. Additionally, I learned how to setup and use AWS Services (Lambda, API Gateway, CloudFormation, CloudWatch) to serve mock data to the website. Furthermore, I learned how to use AWS S3 and CloudFront to host the website on AWS."
 }

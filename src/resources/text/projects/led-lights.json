@@ -7,9 +7,9 @@
   }],
   "mediaAlt": "LED lights",
   "shortDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "LED light strips have become a staple of the college dorm. However, being engineers, we did not want to settle for the pre-loaded LED animations, so my roommate and I decided to make our own.",
   "projectDescription":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "My roommate and I were on a quest to make our room as cozy as possible, so we bought a programmable LED strip off of Amazon, hooked it up to my Arduino, and the sky became the limit. We made implemented the Snake Game, a 2D representation of a lightsaber battle with its own physics engine, a Christmas rock to get us into the holiday spirit, and many more animations just for the fun of it.",
   "thingsLearned":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "Due to the scale of the programs that we were running, there were several limiting factors we had to work around. First, we had to learn how to optimize the amount of space our code took up since the Arduino's memory is limited. Next, we had to learn how to write event-based code for a single-threaded device. Finally, we had to learn how to intergrate several peripherals into our project to give us a mechanism to switch animations."
 }
