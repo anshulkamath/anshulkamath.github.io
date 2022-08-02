@@ -69,12 +69,8 @@
     cursor: pointer;
 }
 
-.clicked-item {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 800;
-    padding: 0vw;
-    color: var(--bs-light);
-    background-color: inherit;
+.clicked {
+    color: #00000058;
 }
 
 /* external link styling */

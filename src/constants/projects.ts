@@ -111,7 +111,6 @@ export const websiteProject: ProjectData = {
   ...websiteProjectJSON,
   media: websitePNG,
   projectType: ProjectType.PERSONAL,
-  imgStyling: { objectPosition: '-70px' },
 }
 
 export const projectLists = {

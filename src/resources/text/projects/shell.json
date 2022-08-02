@@ -7,7 +7,7 @@
   }],
   "mediaAlt": "shell",
   "shortDescription":
-    "Creating a minimal dependency shell in C.",
+    "Creating a minimal dependency shell in C called `A New Shell` (ANShell).",
   "projectDescription":
     "Shell is a basic programming language that allows the user to access operating system services via the command line. This project first reimplements the common shell Bash, and then implements `A New Shell,` or ANShell for short. As of now, the project is still in progress. This page will be updated as time goes on.",
   "thingsLearned":

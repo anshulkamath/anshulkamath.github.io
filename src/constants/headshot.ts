@@ -43,9 +43,6 @@ export const robotics = {
   alt: 'me doing robotics',
   caption:
     'Starting in 8th grade, I particpated in the VEX Robotics competition. I was the lead coder for my team, 4610Z, and this is when I knew that I wanted to pursue a career in software development.',
-  style: {
-    objectPosition: '-90px',
-  },
 }
 
 export const snowman = {
