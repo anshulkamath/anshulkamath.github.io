@@ -19,13 +19,14 @@
 
   transition: all 0.3s ease-in-out;
 
-  --footer-text-size: 1.25vmax;
+  --footer-text-size: 1.25vw;
 }
 
 /* Flippable card properties */
 .flip-card-container {
   position: relative;
-  height: 40vh;
+  height: 40vmin;
+  min-height: 100px;
   background-color: transparent;
   transition: transform 1s;
   transform-origin: center;
@@ -110,13 +111,13 @@ div.card-div-blurb {
 }
 
 h3.card-div-blurb {
-  font-size: 2.5vmax;
+  font-size: 2.5vw;
   font-weight: 700;
 }
 
 h4.card-div-blurb {
   font-weight: 300;
-  font-size: 1.5vmax;
+  font-size: 1.5vw;
 }
 
 h5.card-div-blurb {
@@ -125,7 +126,7 @@ h5.card-div-blurb {
 }
 
 p.card-div-blurb {
-  font-size: 1vmax;
+  font-size: 1vw;
 }
 
 b.card-div-blurb {
@@ -136,6 +137,7 @@ img.card-div-front, img.card-div-front-mirrored {
   height: 100%;
   width: auto;
   max-width: 40%;
+  background-position: center;
   object-fit: cover;
 }
 
