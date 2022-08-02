@@ -24,7 +24,7 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
 
     return {
       elem: isSelected ? (
-        <div id={id} key={id} className='badge-item badge-font'>
+        <div id={id} key={id} className='menu-item mono clicked'>
           {title}
         </div>
       ) : (
@@ -38,21 +38,19 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
           {title}
         </button>
       ),
+      title,
       value: +isSelected,
     }
   })
 
-  const [currentPage, ...navPages] = navPagesMap
-    .sort((a, b) => b.value - a.value)
-    .map(({ elem }) => elem)
+  const [currentPage] = [...navPagesMap].sort((a, b) => b.value - a.value)
 
   // create the badge
   const badge = (
     <div className='navbar-badge'>
       <div id={BADGE.id} key={BADGE.id} className='badge-item badge-font'>
-        {`${BADGE.title}\u00A0/\u00A0`}
+        {`${BADGE.title} / ${currentPage.title}`}
       </div>
-      {currentPage}
     </div>
   )
 
@@ -73,7 +71,7 @@ const NavBar: React.FunctionComponent<NavBarProps> = ({ page, onClick }) => {
     <div className='navbar-container'>
       <div className='navbar'>
         {badge}
-        {navPages}
+        {navPagesMap.map(({ elem }) => elem)}
         {externalLinkButtons}
       </div>
     </div>
