@@ -7,6 +7,7 @@ interface NavItem {
   title: string
   style?: string
   link?: string
+  target?: string
 }
 
 // navbar links
@@ -22,6 +23,7 @@ export const GITHUB = {
   title: 'github',
   style: 'github',
   link: 'https://github.com/anshulkamath',
+  target: 'blank',
 }
 
 export const LINKEDIN = {
@@ -29,6 +31,7 @@ export const LINKEDIN = {
   title: 'linkedin',
   style: 'linked-in',
   link: 'https://www.linkedin.com/in/anshulkam/',
+  target: 'blank',
 }
 
 export const CONTACT_ME = {
@@ -36,6 +39,7 @@ export const CONTACT_ME = {
   title: 'contact me!',
   style: 'contact-me',
   link: 'mailto:anshulkam@gmail.com?subject=Mail from anshul-kamath.com',
+  target: '',
 }
 
 export const navbarPageRouter: NavItem[] = [HOME, PROJECTS, RESUME, MISC]

@@ -1,6 +1,6 @@
 {
   "title": "Prosperly",
-  "skills": ["Typescript", "AWS DynamoDB", "AWS RDE", "PostgreSQL"],
+  "skills": ["Typescript", "AWS DynamoDB", "AWS RDS", "PostgreSQL"],
   "time": "April 2021 - August 2021",
   "mediaAlt": "prosperly app",
   "shortDescription":
@@ -8,5 +8,5 @@
   "projectDescription":
     "Prosperly is a startup that is building an app for consumers. My job was to architect and build the backend infrastructure from the endpoints to the databases. Code quality was emphasized, shown by extensive unit testing, integration testing, and 100% code coverage.",
   "thingsLearned":
-    "Prosperly gave me my first real taste at backend engineering. As the backend architect, I had to create schemas for databases and HTTP endpoints, justify decisions for choosing relational databases for some app data and non-relational databases for other app data, and extensively test the code that was being pushed out. Additionally, I became familiar with industry services such as AWS DynamoDB and AWS RDE (PostgreSQL)."
+    "Prosperly gave me my first real taste at backend engineering. As the backend architect, I had to create schemas for databases and HTTP endpoints, justify decisions for choosing relational databases for some app data and non-relational databases for other app data, and extensively test the code that was being pushed out. Additionally, I became familiar with industry services such as AWS DynamoDB and AWS RDS (PostgreSQL)."
 }

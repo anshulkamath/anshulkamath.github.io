@@ -16,7 +16,7 @@ const ProjectsPage: React.FunctionComponent = () => {
   } = projectLists
 
   const [projectsToggled, setProjectsToggled] = useState(true)
-  const [experienceToggled, setExperienceToggled] = useState(false)
+  const [experienceToggled, setExperienceToggled] = useState(true)
 
   const projectsList =
     (projectsToggled && experienceToggled && allProjects) ||

@@ -1,0 +1,20 @@
+.download-button {
+  border-radius: 2vh;
+  background-color: var(--bs-gray);
+  padding: 1.5vmin;
+  font-size: 1.5vw;
+  color: white;
+  transition: var(--transition-type);
+}
+
+.download-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 43px;
+  transition: var(--transition-type);
+}
+
+.sticky-bottom-right {
+  position: fixed;
+  right: 1vw;
+  bottom: 1vw;
+  z-index: 1;
+}

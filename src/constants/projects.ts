@@ -115,25 +115,26 @@ export const websiteProject: ProjectData = {
 
 export const projectLists = {
   [ProjectType.PERSONAL]: [
+    swollioProject,
     ecdsaProject,
     ledLightsProject,
     websiteProject,
-    swollioProject,
-    cTestingProject,
     manimProject,
     shellProject,
+    cTestingProject,
   ],
   [ProjectType.WORK]: [amazonProject, amistadProject, prosperlyProject, luluProject],
   [ProjectType.ALL]: [
     amazonProject,
     amistadProject,
-    ecdsaProject,
     prosperlyProject,
+    luluProject,
+    swollioProject,
+    ecdsaProject,
     ledLightsProject,
     websiteProject,
-    swollioProject,
-    cTestingProject,
     manimProject,
     shellProject,
+    cTestingProject,
   ],
 }
