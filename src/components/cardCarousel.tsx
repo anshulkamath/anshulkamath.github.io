@@ -33,6 +33,7 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
   const [photoIndex, setPhotoIndex] = useState(0)
   const [zIndices, setZIndices] = useState([3, 2, 1, 0, 0, 0])
   const [showPhotos, setShowPhotos] = useState(false)
+  const [wheelDrift, setWheelDrift] = useState(false)
 
   const populateZIndices = (arr: number[], zIndex: number) => {
     const result = [...arr]
@@ -79,18 +80,27 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
   const onScrollHandler = (e: WheelEvent) => {
     if (!showPhotos) return
 
+    // reset when scrolling stops
+    const wheelDriftThreshold = 15
+    if (e.deltaX >= -wheelDriftThreshold && e.deltaX <= wheelDriftThreshold) {
+      setWheelDrift(false)
+    }
+
+    if (wheelDrift) return
+
     cumulativeX += e.deltaX
     cumulativeX *= Number(showPhotos)
 
-    const SCROLL_THRESHOLD = 50
+    const SCROLL_THRESHOLD = 500
     if (cumulativeX > SCROLL_THRESHOLD && photoIndex < zIndices.length - 1) {
       increaseIndex(photoIndex, zIndices, 1)
       cumulativeX = 0
+      setWheelDrift(true)
     }
 
     if (cumulativeX < -SCROLL_THRESHOLD && photoIndex > 0) {
       decreaseIndex(photoIndex, zIndices, 1)
-      cumulativeX = 0
+      setWheelDrift(true)
     }
   }
 

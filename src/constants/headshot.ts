@@ -18,7 +18,7 @@ export const graduation = {
   img: graduationPNG,
   alt: 'me graduating !!',
   caption:
-    'I spent the first 18 years of my life in a little place called Millburn, New Jersey. After many late night study sessions to early morning swim practices, I finally earned a diploma and started the next chapter of my life (colorized, 6/23/2019).',
+    'I spent the first 18 years of my life in a little town called Millburn, New Jersey. After many late night study sessions and early morning swim practices, I finally graduated and started the next chapter of my life (colorized, 6/23/2019).',
   style: {
     objectPosition: '0px -10px',
   },
@@ -28,7 +28,7 @@ export const headshot = {
   img: headshotPNG,
   alt: 'me',
   caption:
-    'Hi! This is me at at my swim club from high school. Hover or scroll over the images and take a look at my gallery for a soft introduction - hopefully they can give you a sense of who I am!',
+    'Hi! This is me at at my swim club from high school. Hover or swipe (left and right) over the images to take a look at my gallery for a soft introduction - hopefully they can give you a sense of who I am!',
 }
 
 export const hiking = {
@@ -49,7 +49,7 @@ export const snowman = {
   img: snowmanPNG,
   alt: 'snowman',
   caption:
-    "Aside from coding projects, I love taking up the ~seasonal~ side project as well! Take this giant, 15' snowman, for example. After a particularly heavy snowstorm, my friends and I realized that life gave us lemons, and it was our turn to make lemonade.",
+    "Aside from coding projects, I love taking up the ~seasonal~ side project as well! Take this giant, 15' snowman, for example. After a particularly heavy snowstorm, my friends and I decided to get into the holiday spirit and build a snowman that the neighborhood could enjoy!.",
 }
 
 export const swimming = {
