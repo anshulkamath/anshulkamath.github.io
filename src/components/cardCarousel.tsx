@@ -33,7 +33,7 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
   const [photoIndex, setPhotoIndex] = useState(0)
   const [zIndices, setZIndices] = useState([3, 2, 1, 0, 0, 0])
   const [showPhotos, setShowPhotos] = useState(false)
-  const [wheelDrift, setWheelDrift] = useState(false)
+  const [scrollTime, setScrollTime] = useState(0.1)
 
   const populateZIndices = (arr: number[], zIndex: number) => {
     const result = [...arr]
@@ -76,44 +76,43 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
     setShowPhotos(false)
   }, [])
 
+  const wheelSpeedToTime = (x: number): number => {
+    if (Math.abs(x) < 15) return 0.3
+    if (Math.abs(x) < 30) return 0.2
+    if (Math.abs(x) < 50) return 0.1
+    return 0.01
+  }
+
   let cumulativeX = 0
   const onScrollHandler = (e: WheelEvent) => {
     if (!showPhotos) return
 
-    // reset when scrolling stops
-    const wheelDriftThreshold = 15
-    if (e.deltaX >= -wheelDriftThreshold && e.deltaX <= wheelDriftThreshold) {
-      setWheelDrift(false)
-    }
-
-    if (wheelDrift) return
-
     cumulativeX += e.deltaX
     cumulativeX *= Number(showPhotos)
+    setScrollTime(wheelSpeedToTime(e.deltaX))
 
-    const SCROLL_THRESHOLD = 500
+    const SCROLL_THRESHOLD = 100
     if (cumulativeX > SCROLL_THRESHOLD && photoIndex < zIndices.length - 1) {
       increaseIndex(photoIndex, zIndices, 1)
       cumulativeX = 0
-      setWheelDrift(true)
     }
 
     if (cumulativeX < -SCROLL_THRESHOLD && photoIndex > 0) {
       decreaseIndex(photoIndex, zIndices, 1)
-      setWheelDrift(true)
     }
   }
 
   useEffect(() => {
     const content = document.getElementById('body')
     if (!content) return () => {}
-    content.style.overflow = 'hidden'
+    if (showPhotos) content.style.overflow = 'hidden'
+    else content.style.overflow = 'visible'
 
     window.addEventListener('wheel', onScrollHandler, { passive: true })
 
     return () => {
-      content.style.overflow = 'visible'
       window.removeEventListener('wheel', onScrollHandler)
+      content.style.overflow = 'visible'
     }
   })
 
@@ -155,13 +154,13 @@ const CardCarousel: React.FunctionComponent<CardCarouselProps> = ({
               key={photo.alt}
               className={`card-carousel-image${rotationTransform}`}
               onClick={() => onClick(photoIndex, zIndices, skipNumber)}
-              style={{ zIndex: zIndices[i] }}
+              style={{ zIndex: zIndices[i], transition: `${scrollTime}s ease-in-out` }}
             >
               <img
                 className='card-carousel-image'
                 src={photo.img}
                 alt={photo.alt}
-                style={photo.style}
+                style={{ ...photo.style, transition: `${scrollTime}s ease-in-out` }}
               />
             </div>
           )

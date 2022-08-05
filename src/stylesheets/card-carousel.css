@@ -22,7 +22,6 @@
   height: inherit;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-  transition: var(--transition-type);
 }
 
 div.card-carousel-image {
@@ -60,7 +59,7 @@ img.card-carousel-image {
 }
 
 .card-carousel-text {
-  border-radius: 3vh;
+  border-radius: 2vmin;
   background-color: white;
   padding: 2vmin;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
