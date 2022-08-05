@@ -49,7 +49,7 @@ export const snowman = {
   img: snowmanPNG,
   alt: 'snowman',
   caption:
-    "Aside from coding projects, I love taking up the ~seasonal~ side project as well! Take this giant, 15' snowman, for example. After a particularly heavy snowstorm, my friends and I decided to get into the holiday spirit and build a snowman that the neighborhood could enjoy!.",
+    "Aside from coding projects, I love taking up the ~seasonal~ side project as well! Take this giant, 15' snowman, for example. After a particularly heavy snowstorm, my friends and I decided to get into the holiday spirit and build a snowman that the neighborhood could enjoy!",
 }
 
 export const swimming = {
