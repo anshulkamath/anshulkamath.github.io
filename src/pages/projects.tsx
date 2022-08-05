@@ -26,8 +26,23 @@ const ProjectsPage: React.FunctionComponent = () => {
 
   const [cardsFlipped, setCardsFlipped] = useState(Array(projectsList.length).fill(false))
 
-  const onProjectToggle = useCallback((p: boolean) => setProjectsToggled(p), [])
-  const onExperienceToggle = useCallback((e: boolean) => setExperienceToggled(e), [])
+  // toggles to ensure that button cannot be untoggled if no other button is toggled
+  const onProjectToggle = useCallback(
+    (p: boolean) => {
+      if (!p && projectsToggled && !experienceToggled) return
+      setProjectsToggled(p)
+    },
+    [projectsToggled, experienceToggled],
+  )
+
+  // toggles to ensure that button cannot be untoggled if no other button is toggled
+  const onExperienceToggle = useCallback(
+    (e: boolean) => {
+      if (!e && !projectsToggled && experienceToggled) return
+      setExperienceToggled(e)
+    },
+    [projectsToggled, experienceToggled],
+  )
 
   // creates a callback to toggle the corresponding index in the cardsFlipped state
   const onCardPressedCallback = useCallback(
