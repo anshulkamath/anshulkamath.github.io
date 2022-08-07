@@ -11,17 +11,16 @@
   display: flex;
   margin-bottom: 2vh;
   cursor: pointer;
-}
-
-.card-carousel-image {
-  border-radius: 2vmin;
+  transition: var(--transition-type);
 }
 
 .card-carousel-image {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  border-radius: 2vmin;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px; 
+  transition: var(--transition-type);
 }
 
 div.card-carousel-image {
